@@ -21,5 +21,7 @@ namespace library_web_api.Data.Models
         //Nav properties
         public int PublisherId { get; set; }
         public Publisher Publisher { get; set; }
+        public List<Book_Author> Book_Authors { get; set; }
+
     }
 }
