@@ -27,10 +27,17 @@ namespace library_web_api.Controllers
             return Ok(allBooks);
         }
 
+        [HttpGet("{id}")]
+        public IActionResult GetBookById(int id)
+        {
+            var book = _booksService.GetBookById(id);
+            return Ok(book);
+        }
+
         [HttpPost]
         public IActionResult AddBook([FromBody] BookVM book)
         {
-            _booksService.AddBook(book);
+            _booksService.AddBookWithAuthors(book);
             return Ok();
         }
 

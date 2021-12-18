@@ -26,7 +26,6 @@ namespace library_web_api.Data
                         DateRead = DateTime.Now.AddDays(-10),
                         Rate = 5,
                         Genre = "Historical fiction",
-                        Author = "Ivo Andric",
                         CoverUrl = "https...",
                         DateAdded = DateTime.Now
                     },
@@ -36,7 +35,6 @@ namespace library_web_api.Data
                         Description= "A novel on 18th century Sarajevo under Ottoman rule, featuring a soldier returned from the wars.",                        
                         IsRead = false,
                         Genre = "Historical fiction",
-                        Author = "Mesa Selimovic",
                         CoverUrl = "https...",
                         DateAdded = DateTime.Now
                     });
